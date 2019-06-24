@@ -1,0 +1,8 @@
+[package]
+authors = ["mapleFU <1506118561@qq.com>"]
+build = "build.rs"
+name = "mwish_c_encoding"
+version = "0.1.0"
+
+[build-dependencies]
+bindgen = "0.49.2"
