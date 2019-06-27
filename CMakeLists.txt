@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.12)
 project(OssCZipLib C)
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 set(CMAKE_C_STANDARD 11)
 
 find_package(ZLIB)
