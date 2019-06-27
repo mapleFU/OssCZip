@@ -7,7 +7,7 @@ use std::path::PathBuf;
 fn main() {
     // Tell cargo to tell rustc to link the system bzip2
     // shared library.
-    println!("cargo:rustc-link-search=native={}", "/Users/fuasahi/ClionProjects/oss-storage-layer/OssCZip/build");
+    println!("cargo:rustc-link-search=native={}", "OssCZip/build");
     println!("cargo:rustc-link-lib=static=z");
     println!("cargo:rustc-link-lib=static=OssCZipLib"); // the name of the library
 //    println!("cargo:rustc-link-lib=static=ZLIB");
