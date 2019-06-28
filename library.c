@@ -2,12 +2,13 @@
 
 #include <stdio.h>
 #include <unistd.h>
-#include <zlib.h>
 #include <stdlib.h>
 #include <memory.h>
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <errno.h>
+
+#include "zlib.h"
 
 
 bool oss_remove(const char* filename) {

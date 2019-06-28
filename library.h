@@ -2,6 +2,7 @@
 #define OSSCZIPLIB_LIBRARY_H
 
 #include <stdbool.h>
+#include <zip.h>
 
 bool oss_remove(const char* filename);
 
