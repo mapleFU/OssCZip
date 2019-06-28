@@ -1,4 +1,4 @@
-
+extern crate cc;
 extern crate bindgen;
 
 use std::env;
@@ -10,8 +10,16 @@ fn main() {
 //    println!("cargo:rustc-link-search=native={}", "OssCZip/build");
 //    println!("cargo:rustc-link-lib=static=OssCZipLib"); // the name of the library
 //    println!("cargo:rustc-link-lib=static=ZLIB");
+    cc::Build::new()
+        .file("library.c")
+        .compile("ossczip");
+
     println!("cargo:rustc-link-lib=z");
-    println!("cargo:rustc-link-lib=ossczip");
+
+
+//    cc::
+//    println!("cargo:rustc-link-lib=ossczip");
+//    println!("cargo:rustc-link-lib=z");
 
 
     // The bindgen::Builder is the main entry point
