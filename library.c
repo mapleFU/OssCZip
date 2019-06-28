@@ -52,7 +52,7 @@ void oss_compress(const char *src, const char* dest) {
     char buf[1024];
     lseek(src_fd, SEEK_SET, 0);
     ssize_t len;
-    while (len = read(src_fd, buf, sizeof(buf))) {
+    while ((len = read(src_fd, buf, sizeof(buf)))) {
         if (len <= 0) {
             break;
         }
