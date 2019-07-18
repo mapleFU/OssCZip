@@ -9,6 +9,6 @@ const static char* dest = "data/testimg.png.zip";
 const static char* dest2 = "data/testimg.png-2.png";
 
 int main() {
-//    oss_compress(path, dest);
-//    oss_decompress(dest, dest2);
+    oss_compress(path, dest);
+    oss_decompress(dest, dest2);
 }
